@@ -1,0 +1,20 @@
+server {
+    listen 80;
+    server_name 118.89.52.182; # 这是HOST机器的外部域名，用地址也行
+
+    root      /home/ubuntu/zlktqa;
+    access_log  /home/ubuntu/zlktqa/log/acess_log;
+    error_log   /home/ubuntu/zlktqa/log/error_log;
+
+    location / {
+        proxy_pass http://127.0.0.1:5000; # 这里是指向 gunicorn host 的服务地址
+        proxy_redirect     off;
+        proxy_set_header   Host                 $http_host;
+        proxy_set_header   X-Real-IP            $remote_addr;
+        proxy_set_header   X-Forwarded-For      $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto    $scheme;
+    }
+    location ~ ^\/static\/.*$ {
+        root    /home/ubuntu/zlktqa/;
+    }
+  }

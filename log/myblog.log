@@ -1,0 +1,44 @@
+2018-03-03 19:34:01,150 WARN Included extra file "/home/ubuntu/zlktqa/zlktqa.conf" during parsing
+2018-03-03 19:39:29,305 WARN Included extra file "/home/ubuntu/zlktqa/zlktqa.conf" during parsing
+2018-03-03 19:43:47,539 WARN Included extra file "/home/ubuntu/zlktqa/zlktqa.conf" during parsing
+2018-03-03 19:45:02,845 WARN Included extra file "/home/ubuntu/zlktqa/zlktqa.conf" during parsing
+2018-03-03 19:50:03,240 CRIT Supervisor running as root (no user in config file)
+2018-03-03 19:50:03,241 WARN Included extra file "/home/ubuntu/zlktqa/zlktqa.conf" during parsing
+2018-03-03 19:51:22,544 CRIT Supervisor running as root (no user in config file)
+2018-03-03 19:51:22,544 WARN Included extra file "/home/ubuntu/zlktqa/zlktqa.conf" during parsing
+2018-03-03 19:51:22,555 INFO RPC interface 'supervisor' initialized
+2018-03-03 19:51:22,556 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-03-03 19:51:22,558 INFO daemonizing the supervisord process
+2018-03-03 19:51:22,559 INFO supervisord started with pid 7890
+2018-03-03 19:51:23,561 INFO spawned: 'zlktqa' with pid 7891
+[2018-03-03 19:51:24 +0800] [7891] [INFO] Starting gunicorn 19.7.1
+[2018-03-03 19:51:24 +0800] [7891] [INFO] Listening at: http://127.0.0.1:5000 (7891)
+[2018-03-03 19:51:24 +0800] [7891] [INFO] Using worker: sync
+[2018-03-03 19:51:24 +0800] [7894] [INFO] Booting worker with pid: 7894
+[2018-03-03 19:51:24 +0800] [7895] [INFO] Booting worker with pid: 7895
+[2018-03-03 19:51:24 +0800] [7896] [INFO] Booting worker with pid: 7896
+[2018-03-03 19:51:25 +0800] [7897] [INFO] Booting worker with pid: 7897
+2018-03-03 19:51:27,015 INFO success: zlktqa entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)
+2018-03-03 20:24:33,413 CRIT Supervisor running as root (no user in config file)
+2018-03-03 20:24:33,413 WARN Included extra file "/home/ubuntu/zlktqa/zlktqa.conf" during parsing
+2018-03-03 20:28:47,662 INFO waiting for zlktqa to stop
+[2018-03-03 20:28:47 +0800] [7891] [INFO] Handling signal: term
+[2018-03-03 20:28:47 +0800] [7896] [INFO] Worker exiting (pid: 7896)
+[2018-03-03 20:28:47 +0800] [7897] [INFO] Worker exiting (pid: 7897)
+/home/ubuntu/zlktqa/venv/lib/python3.5/site-packages/sqlalchemy/sql/compiler.py:643: SAWarning: Can't resolve label reference '-create_time'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2018-03-03 20:28:47 +0800] [7894] [INFO] Worker exiting (pid: 7894)
+/home/ubuntu/zlktqa/venv/lib/python3.5/site-packages/sqlalchemy/sql/compiler.py:643: SAWarning: Can't resolve label reference '-create_time'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2018-03-03 20:28:47 +0800] [7895] [INFO] Worker exiting (pid: 7895)
+[2018-03-03 20:28:48 +0800] [7891] [INFO] Shutting down: Master
+2018-03-03 20:28:48,672 INFO stopped: zlktqa (exit status 0)
+2018-03-03 20:29:32,096 INFO spawned: 'zlktqa' with pid 9655
+[2018-03-03 20:29:32 +0800] [9655] [INFO] Starting gunicorn 19.7.1
+[2018-03-03 20:29:32 +0800] [9655] [INFO] Listening at: http://127.0.0.1:5000 (9655)
+[2018-03-03 20:29:32 +0800] [9655] [INFO] Using worker: sync
+[2018-03-03 20:29:32 +0800] [9658] [INFO] Booting worker with pid: 9658
+[2018-03-03 20:29:32 +0800] [9660] [INFO] Booting worker with pid: 9660
+[2018-03-03 20:29:32 +0800] [9661] [INFO] Booting worker with pid: 9661
+[2018-03-03 20:29:32 +0800] [9662] [INFO] Booting worker with pid: 9662
+2018-03-03 20:29:35,528 INFO success: zlktqa entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)
